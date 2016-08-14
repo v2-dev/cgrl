@@ -1,4 +1,4 @@
-# cgrl
+# CGRL
 The project required the emulation of a network in the image below using the Netkit platform.
 
 
@@ -22,4 +22,7 @@ DMZ:
 p2p-­‐‐link:	
   2.34.1.228/31	
   
-  
+*pc are configured with DHCP
+*servers also use DHCP but static binding 
+*public access to Internet with TAP (be careful with address on your local machine!)
+
