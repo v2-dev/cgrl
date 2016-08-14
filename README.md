@@ -19,10 +19,15 @@ LAN3:
 DMZ:	
   160.80.103.0/24	
   
-p2p-­‐‐link:	
+p2p-­link:	
   2.34.1.228/31	
-  
+
+Other configurations:
+ 
 *pc are configured with DHCP
 *servers also use DHCP but static binding 
 *public access to Internet with TAP (be careful with address on your local machine!)
+
+
+##NAT 
 
