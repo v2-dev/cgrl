@@ -1,6 +1,11 @@
 # CGRL
 The project required the emulation of a network in the image below using the Netkit platform.
 
+##Requirements
+
+* [Netkit 2.8](http://wiki.netkit.org/index.php/Download_Official)
+* Linux
+* A beer
 
 ![Image of Network](https://raw.githubusercontent.com/v2-dev/cgrl/master/network.png)
 
