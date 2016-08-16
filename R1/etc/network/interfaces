@@ -1,0 +1,39 @@
+# Used by ifup(8) and ifdown(8). See the interfaces(5) manpage or
+# /usr/share/doc/ifupdown/examples for more information.
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+########LAN1#########
+auto eth0
+iface eth0 inet static
+	address 10.0.0.1
+	netmask 255.255.255.0
+
+########LAN2#########
+auto eth1
+iface eth1 inet static
+	address 10.0.1.1
+	netmask 255.255.255.0
+
+#########LAN3########
+auto eth2
+iface eth2 inet static
+	address 10.0.2.1
+	netmask 255.255.255.0
+
+#########DMZ#########
+auto eth3
+iface eth3 inet static
+	address 160.80.103.1
+	netmask 255.255.255.0
+
+#######P2P-LINK######
+auto eth4
+iface eth4 inet static
+	address 2.34.1.228
+	netmask 255.255.255.254
+
+
+gateway 2.34.1.229

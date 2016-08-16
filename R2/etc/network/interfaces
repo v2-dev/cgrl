@@ -1,0 +1,13 @@
+# Used by ifup(8) and ifdown(8). See the interfaces(5) manpage or
+# /usr/share/doc/ifupdown/examples for more information.
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static 
+	address 2.34.1.229
+	netmask 255.255.255.254
+
+gateway 192.168.25.1
