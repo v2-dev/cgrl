@@ -1,0 +1,2 @@
+ip link set eth0 address 02:01:02:03:04:09
+/etc/init.d/networking start
