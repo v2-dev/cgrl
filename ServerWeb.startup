@@ -1,2 +1,12 @@
 ip link set eth0 address 02:01:02:03:04:09
 /etc/init.d/networking start
+
+useradd -m -s /bin/bash sysadmin
+
+chown -R sysadmin.sysadmin /home/sysadmin/
+chmod -R 755 /home/sysadmin/
+chmod 600 /home/sysadmin/.ssh/id_rsa
+chmod 611 /home/sysadmin/.ssh/id_rsa.pub
+chmod 611 /home/sysadmin/.ssh/authorized_keys
+
+/etc/init.d/ssh start
