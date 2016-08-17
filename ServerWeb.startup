@@ -11,3 +11,7 @@ chmod 611 /home/sysadmin/.ssh/authorized_keys
 
 /etc/init.d/ssh start
 /etc/init.d/apache2 start
+
+a2enmod ssl
+a2ensite giulia.org
+/etc/init.d/apache2 restart
