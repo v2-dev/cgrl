@@ -70,6 +70,16 @@ iptables -t filter -A FORWARD -m state --state NEW -p icmp -s 10.0.2.0/24 -j ACC
 iptables -t filter -A FORWARD -m state --state NEW -p tcp --dport 20 -s 10.0.2.0/24 -j ACCEPT
 iptables -t filter -A FORWARD -m state --state NEW -p tcp --dport 21 -s 10.0.2.0/24 -j ACCEPT
 
+#########DMZ#################################################################################### 
+
+#Not required but necessary to install software
+
+iptables -t filter -A FORWARD -m state --state NEW -s 160.80.103.0/24 -d 10.0.0.0/24 -j DROP
+iptables -t filter -A FORWARD -m state --state NEW -s 160.80.103.0/24 -d 10.0.1.0/24 -j DROP
+iptables -t filter -A FORWARD -m state --state NEW -s 160.80.103.0/24 -d 10.0.2.0/24 -j DROP
+
+iptables -t filter -A FORWARD -m state --state NEW -s 160.80.103.0/24 -j ACCEPT
+
 iptables -t filter -A FORWARD -m state --state ESTABLISHED,RELATED -j ACCEPT
 
 
