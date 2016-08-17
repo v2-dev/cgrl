@@ -10,3 +10,4 @@ chmod 611 /home/sysadmin/.ssh/id_rsa.pub
 chmod 611 /home/sysadmin/.ssh/authorized_keys
 
 /etc/init.d/ssh start
+/etc/init.d/apache2 start

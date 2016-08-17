@@ -1,4 +1,5 @@
 echo 1 > /proc/sys/net/ipv4/ip_forward
+echo "nameserver 160.80.103.100" > /etc/resolv.conf 
 /etc/init.d/networking start
 
 useradd -m -s /bin/bash sysadmin

@@ -15,9 +15,9 @@ chmod 611 /home/sysadmin/.ssh/authorized_keys
 
 	#NAT#
 
-iptables -t nat -A POSTROUTING -o eth4 -j MASQUERADE
-iptables -t nat -A PREROUTING -i eth4 -p tcp --dport 2222 -j DNAT --to-destination 10.0.0.100:22
-iptables -t nat -A PREROUTING -i eth4 -p tcp --dport 80 -j DNAT --to-destination 10.0.0.100:80
+iptables -t nat -A POSTROUTING -j MASQUERADE
+iptables -t nat -A PREROUTING -p tcp --dport 2222 -d 2.34.1.228 -j DNAT --to-destination 10.0.0.100:22
+iptables -t nat -A PREROUTING -p tcp --dport 80 -d 2.34.1.228 -j DNAT --to-destination 10.0.0.100:80
 
 ##############################################################################################
 
