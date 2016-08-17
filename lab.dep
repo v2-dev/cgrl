@@ -1,10 +1,10 @@
 R1: R2
-PC1: R1 R2
-PC2: R1 R2
-PC3: R1 R2
-PC4: R1 R2
-PC5: R1 R2
-PC6: R1 R2
-ServerPriv: R1 R2
 ServerDNS: R1 R2
-ServerWeb: R1 R2
+PC1: R1 R2 ServerDNS
+PC2: R1 R2 ServerDNS
+PC3: R1 R2 ServerDNS
+PC4: R1 R2 ServerDNS
+PC5: R1 R2 ServerDNS
+PC6: R1 R2 ServerDNS
+ServerPriv: R1 R2 ServerDNS
+ServerWeb: R1 R2 ServerDNS

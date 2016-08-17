@@ -19,10 +19,3 @@ ServerWeb		IN	CNAME	giulia.org.
 ServerPriv.giulia.org.	IN	A	2.34.1.228
 R1.giulia.org.		IN	A	2.34.1.228
 R2.giulia.org.		IN	A	2.34.1.229
-
-PC1.giulia.org.		IN	A	10.0.0.150
-PC2.giulia.org.		IN	A	10.0.0.150
-PC3.giulia.org.		IN	A	10.0.1.150
-PC4.giulia.org.		IN	A	10.0.1.150
-PC5.giulia.org.		IN	A	10.0.2.150
-PC6.giulia.org.		IN	A	10.0.2.150
